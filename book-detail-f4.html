@@ -1,0 +1,100 @@
+<!-- RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023B
+    Assessment: Assignment 1
+    Author: Phan Nguyen Viet Nhan
+    ID: s3978145
+    Acknowledgement: This project is made and publish by Phan Nguyen Viet Nhan from RMIT -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!--This import icons for later usage-->
+        <script src="https://kit.fontawesome.com/d3a524326f.js" crossorigin="anonymous"></script>
+        <!--Imported font family from google-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+        </style>
+        <title>📚 Luxury Bookstore 💎</title>
+    </head>
+    <body>
+        <!--Navigation bar section-->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i> 
+            </label>
+            <img class="img-logo" src="3238793-removebg-preview.png" alt="luxury logo">
+            <label class="logo"><a href="index.html">Luxury Bookstore</a></label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>    
+                <li><a href="sub-cat-fic.html">Fiction</a></li>
+                <li><a href="sub-cat-nfic.html">Non-fiction</a></li>
+                <li><a href="sub-cat-cb.html">Children's Books</a></li>
+                <li><a href="contact-page.html">Contact us</a></li>
+                <li><a href="index.html#genre">Shop now</a></li>
+                
+            </ul>
+        </nav>
+        <!--Breadcrumb section-->
+        <div class="breadcrumb">
+            <p>
+                <a href="index.html">Home</a>
+                >
+                <a href="sub-cat-fic.html">Fiction</a>
+                >
+                <a href="book-detail-f4.html">The Hunger</a>
+            </p>
+        </div>
+        <!--Book detail section-->
+        <section class="book-detail-section">
+            <div class="big-image">
+                <img src="https://m.media-amazon.com/images/I/51AikzEz4fL._SX331_BO1,204,203,200_.jpg" alt="The Hunger">
+            </div>
+            <div class="small-images">
+                <img src="https://books.google.com.vn/books/publisher/content?id=ydhgDwAAQBAJ&pg=PT3&img=1&zoom=3&hl=en&sig=ACfU3U2rrddbZ0gtti4ENEtvATzF2BVqFg&w=200" alt="The Hunger">
+                <img src="https://books.google.com.vn/books/publisher/content?id=ydhgDwAAQBAJ&pg=PT5&img=1&zoom=3&hl=en&sig=ACfU3U31AF_ycEKbnjAJdtmTybMXuuSlmg&w=1280" alt="The Hunger">
+                <img src="https://books.google.com.vn/books/publisher/content?id=ydhgDwAAQBAJ&pg=PT6&img=1&zoom=3&hl=en&sig=ACfU3U2QIyf2d54Di6UH02dxg8o9i5evuA&w=1280" alt="The Hunger">
+            </div>
+            <div class="price-btn-section">
+                <p class="price">$15.81</p>
+                <button>Add to cart &nbsp;<i class='fas fa-shopping-cart'></i></button>
+            </div>
+        </section>
+        <!--Book information section-->
+        <section class="book-info">
+            <h1>The Hunger <span class="book-author">by Alma Katsu</span></h1>
+            <h3 class="book-description">
+                A tense and gripping reimagining of one of America's most haunting human disasters: the Donner Party with a supernatural twist.
+                Evil is invisible, and it is everywhere. That is the only way to explain the series of misfortunes that have plagued the wagon train known as the Donner Party. Depleted rations, bitter quarrels, and the mysterious death of a little boy have driven the isolated travelers to the brink of madness. Though they dream of what awaits them in the West, long-buried secrets begin to emerge, and dissent among them escalates to the point of murder and chaos, unknowingly propelling them into one of the deadliest and most disastrous Western adventures in American history.
+                As members of the group begin to disappear, the survivors start to wonder if there really is something disturbing, and hungry, waiting for them in the mountains...and whether the evil that has unfolded around them may have in fact been growing within them all along. Effortlessly combining the supernatural and the historical, The Hunger is an eerie, thrilling look at the volatility of human nature, pushed to its breaking point.
+            </h3>
+        </section>
+
+    <!--Footer section--> 
+    <footer> 
+        <div class="footer-container">    
+            <div class="social-icons">
+                <a href="https://www.facebook.com/pumpthespida/" target="_blank"><i class='fab fa-facebook'></i></a>
+                <a href="https://www.instagram.com/vietnhan._/" target="_blank"><i class='fab fa-instagram'></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class='fab fa-twitter'></i></a>
+                <a href="mailto:s3978145@rmit.edu.vn"><i class='fab fa-google-plus'></i></a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="priv-term.html">Privacy Policy</a></li>
+                    <li><a href="priv-term.html">Terms</a></li>
+                    <li><a href="about-us.html">Copyright</a></li>
+                    <li><a href="contact-page.html">Contact Us</a></li>
+                </ul>
+            </div>      
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023; Design by Viet Nhan</p>
+        </div>
+    </footer>
+    </body> 
+    </html> 

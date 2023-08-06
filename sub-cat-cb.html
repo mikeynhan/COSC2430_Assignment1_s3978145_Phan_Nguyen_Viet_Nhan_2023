@@ -1,0 +1,154 @@
+<!-- RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023B
+    Assessment: Assignment 1
+    Author: Phan Nguyen Viet Nhan
+    ID: s3978145
+    Acknowledgement: This project is made and publish by Phan Nguyen Viet Nhan from RMIT -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!--This import icons for later usage-->
+        <script src="https://kit.fontawesome.com/d3a524326f.js" crossorigin="anonymous"></script>
+        <!--Imported font family from google-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+        </style>
+        <title>📚 Luxury Bookstore 💎</title>
+    </head>
+    <body>
+        <!--Navigation bar section-->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i> 
+            </label>
+            <img class="img-logo" src="3238793-removebg-preview.png" alt="luxury logo">
+            <label class="logo"><a href="index.html">Luxury Bookstore</a></label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>    
+                <li><a href="sub-cat-fic.html">Fiction</a></li>
+                <li><a href="sub-cat-nfic.html">Non-fiction</a></li>
+                <li><a href="sub-cat-cb.html">Children's Books</a></li>
+                <li><a href="contact-page.html">Contact us</a></li>
+                <li><a href="index.html#genre">Shop now</a></li>
+                
+            </ul>
+        </nav>
+        <!--Breadcrumb section-->
+        <div class="breadcrumb">
+            <p>
+                <a href="index.html">Home</a>
+                >
+                <a href="sub-cat-cb.html">Children's books</a>
+            </p>
+        </div>
+        <!--Category Section-->
+        <p class="sub-cat-title">CHILDREN'S BOOKS</p>
+        <div class="line"></div>
+        <!--Subcategory section-->
+        <h2 class="genre-title" id="young-adults">
+            Young Adults
+        </h2>
+        <section class="book-category">
+            <div class="book-item">
+                <a href="about-us.html">
+                    <div style="background-image: url(https://images-us.bookshop.org/ingram/9781639730957.jpg?height=250&v=v2-2945c80f7b8e7962264903102fae5e19);" class="book-item-image">
+                
+                    </div>
+                </a>
+                <p class="book-item-title">Throne of Glass</p>
+                <p class="book-item-author">Sarah J. Maas</p>
+                <p class="book-price">from $17.67</p>
+                <a href="about-us.html" class="book-button">View Item</a>
+            </div>
+            <div class="book-item">
+                <a href="about-us.html">
+                    <div style="background-image: url(https://images-us.bookshop.org/ingram/9780593112625.jpg?height=250&v=v2);" class="book-item-image">
+                
+                    </div>
+                </a>
+                <p class="book-item-title">	Bodies Are Cool</p>
+                <p class="book-item-author">Tyler Feder</p>
+                <p class="book-price">from $17.66</p>
+                <a href="about-us.html" class="book-button">View Item</a>
+            </div>
+            <div class="book-item">
+                <a href="about-us.html">
+                    <div style="background-image: url(https://images-us.bookshop.org/ingram/9781590204597.jpg?height=250&v=v2-3a73a063e28d61eaf2f44c43dc3d0962);"  class="book-item-image">
+                
+                    </div>
+                </a>
+                <p class="book-item-title">True Grit</p>
+                <p class="book-item-author">Charles Portis</p>
+                <p class="book-price">from $15.81</p>
+                <a href="about-us.html" class="book-button">View Item</a>
+            </div>
+        </section>
+        <!--Subcategory section-->
+        <h2 class="genre-title" id="picture-books">
+            Picture Books
+        </h2>   
+        <section class="book-category">
+            <div class="book-item">
+                <a href="about-us.html">
+                    <div style="background-image: url(https://images-us.bookshop.org/ingram/9780525648116.jpg?height=250&v=v2-97f9d523e9d031b0fc10052da65292f0);" class="book-item-image">
+                
+                    </div>
+                </a>
+                <p class="book-item-title">Unbound</p>
+                <p class="book-item-author">Joyce Scott</p>
+                <p class="book-price">from $17.66</p>
+                <a href="about-us.html" class="book-button">View Item</a>
+            </div>
+            <div class="book-item">
+                <a href="about-us.html">
+                    <div style="background-image: url(https://images-us.bookshop.org/ingram/9781953344960.jpg?height=250&v=v2);" class="book-item-image">
+                
+                    </div>
+                </a>
+                <p class="book-item-title">Soft to Touch Words</p>
+                <p class="book-item-author">Little Genius Books</p>
+                <p class="book-price">from $9.29</p>
+                <a href="about-us.html" class="book-button">View Item</a>
+            </div>
+            <div class="book-item">
+                <a href="about-us.html">
+                    <div style="background-image: url(https://images-us.bookshop.org/ingram/9780593308431.jpg?height=250&v=v2-a883ced9ed3d4a5206e3e9a9ff50f2cf);"  class="book-item-image">
+                
+                    </div>
+                </a>
+                <p class="book-item-title">Hot Dog</p>
+                <p class="book-item-author">Doug Salati</p>
+                <p class="book-price">from $17.66</p>
+                <a href="about-us.html" class="book-button">View Item</a>
+            </div>
+        </section>
+    <!--Footer section--> 
+    <footer> 
+        <div class="footer-container">    
+            <div class="social-icons">
+                <a href="https://www.facebook.com/pumpthespida/" target="_blank"><i class='fab fa-facebook'></i></a>
+                <a href="https://www.instagram.com/vietnhan._/" target="_blank"><i class='fab fa-instagram'></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class='fab fa-twitter'></i></a>
+                <a href="mailto:s3978145@rmit.edu.vn"><i class='fab fa-google-plus'></i></a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="priv-term.html">Privacy Policy</a></li>
+                    <li><a href="priv-term.html">Terms</a></li>
+                    <li><a href="about-us.html">Copyright</a></li>
+                    <li><a href="contact-page.html">Contact Us</a></li>
+                </ul>
+            </div>      
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023; Design by Viet Nhan</p>
+        </div>
+    </footer>
+    </body> 
+    </html> 

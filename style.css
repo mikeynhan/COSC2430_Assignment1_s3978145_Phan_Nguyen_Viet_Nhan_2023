@@ -1,0 +1,628 @@
+/*  RMIT University Vietnam
+     Course: COSC2430 Web Programming
+    Semester: 2023B
+    Assessment: Assignment 1
+    Author: Phan Nguyen Viet Nhan
+    ID: s3978145
+   Acknowledgement: This project is made and publish by Phan Nguyen Viet Nhan from RMIT */
+
+   
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body,footer{
+    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    background-color: #f4ebd0;
+}
+
+nav{
+    background: #122620;
+    max-height: 80px;
+    max-width: 100%;
+    
+}
+label.logo a {
+    color: #b68d40 ;
+    font-size: 45px;
+    padding-left: 100px;
+    line-height: 80px;
+}
+img.img-logo{
+    padding-left: 40px ;
+    padding-right: 5px;
+    padding-top: 5px;
+    max-width: 105px;
+    align-items: center;
+    position: absolute;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    }
+nav ul li a{
+    color: #b68d40 ;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+nav a.active,nav ul li a:hover{
+    background: #d6ad60;
+    color: #f4ebd0;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color:#b68d40;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+@media only screen and (min-width: 768px){
+    nav .checkbtn{
+        display: none;
+    }
+} 
+@media only screen and (max-width: 1024px) {
+    img.img-logo{
+        padding-left: 15px;
+        padding-right: 0px;
+        padding-top: 20px;
+        width: 50px;
+    }
+    label.logo a{
+        font-size: 15px;
+        padding-left: 52px;
+
+    }
+    nav ul li a{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #122620;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+        text-align: center;
+    }
+    nav ul li{ 
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    nav ul li a:hover,a.active{
+        background:none;
+        color: #f4ebd0;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+@media only screen and (min-width: 1024px ) and (max-width: 1400px) {
+    nav ul li a{
+        font-size: 12px;
+        padding-left: 2px;
+    }
+    label.logo a{
+        font-size: 35px;
+        padding-left: 52px;
+
+    }
+    img.img-logo{
+        padding-left: 15px;
+        padding-right: 0px;
+        padding-top: 20px;
+        width: 50px;
+    }
+
+}    
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('dried-flowers-notebook.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+
+}
+header div a{
+    text-decoration: none;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: #b68d40;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+    margin: 50px 30px ;
+    font-family: 'Dancing Script', cursive;
+
+}
+.header-content h1{
+    font-size: 7vmin;
+    color: #122620;
+
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #122620;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.ctn{
+    padding: 5px 12px;
+    background: #d6ad60;
+    border-radius: 25px;
+    color: #f4ebd0;
+}
+.ctn:hover{
+    color: #122620;
+}
+.genre{
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.genre-item{
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 33.33%; 
+    border: 2px solid #f4ebd0;
+    box-sizing: border-box;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    transition: 0.3s;
+}
+@media only screen and (max-width:992px){
+    .genre-item{
+        min-width: 50%;
+    }
+}
+@media only screen and (max-width:768px){
+    .genre-item{
+        min-width: 100%;
+    }
+}
+.genre-item-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.genre-item-inner > div {
+    padding: 5px 10px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: #f4ebd0;
+    border-radius: 10px;
+    font-size: 27px;
+    font-weight: bold;
+}
+.genre-item:hover{
+    opacity: 0.5;
+}
+.genre-title{
+    color: #122620;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 10px;
+}
+.book-category{
+    margin: 0 10%;
+    margin-top: 20px;
+    border: 2px solid #d6ad60;
+    background-color: bisque;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 33.33%; 
+    padding: 15px 0;
+
+
+}
+@media only screen and (max-width:768px){
+    .book-category{
+        max-width: 100%;
+    }
+}
+.book-item{
+    border: 60px solid bisque;
+    background-color: bisque;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+.book-item-image{
+    height:300px;
+    width: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    opacity: 1;
+}
+.book-item-image:hover{
+    border-radius: 4px;
+    border: 1.5px solid #25211C;
+    opacity: 0.7;
+}
+.book-item > .book-button{
+    background: #d6ad60;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 1px 10px;
+
+}
+.book-button:hover{
+    background: lightgray;
+    color: #122620;
+}
+.book-item-title{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.book-item-author{
+    color: #666;
+
+}
+.book-price{
+    font-style: italic;
+    padding-bottom: 10px;
+}
+.view-more-space{
+    margin-top:  1% ;
+    margin-left: 47%;
+}
+.view-more-book{
+    font-size: 15px;
+    color: gray; 
+    font-style: italic;
+    text-align: center; 
+}
+.view-more-book:hover{
+    text-decoration: underline; 
+}
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+    padding: 5%;
+    
+
+}
+.video{
+    border: 2px solid #f4ebd0;
+}
+.video1,.video2{
+    width: 560px;
+    height: 315px;
+}
+.video-title{
+    color: #122620;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 10px;
+}
+@media only screen and (max-width:768px){
+    .video-container{
+        min-width: 100%;
+        margin: 0% 0%;
+    }
+    .video1,.video2{
+        width: 390px;
+        height: 200px;
+
+    }
+    .video-title{
+        font-size: 27px;
+    }
+}
+footer{
+    background-color: #122620;
+}
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+
+}
+.social-icons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #d6ad60;
+    margin: 20px;
+    border-radius: 50px;
+}
+.social-icons a i{
+    font-size: 2em;
+    color: #122620;
+}
+.social-icons a:hover{
+    background-color: #f4ebd0;
+    transition: 0.3s;
+}
+
+.footer-nav{
+    margin: 30px 0;
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+}
+.footer-nav ul li a{
+    color: #d6ad60;
+    margin: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer-nav ul li a:hover{
+    text-decoration: underline;
+    color: #f4ebd0;
+}
+@media only screen and (max-width:992px){
+    .footer-nav ul{
+        flex-direction: column;
+    }
+    .footer-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+} 
+.footer-bottom{
+    background-color:#122620;
+    padding: 10px;
+    text-align: center;
+}
+.footer-bottom p{
+    color: #f4ebd0;
+    font-size: 12pxs;
+
+}
+.breadcrumb{
+    color: #122620;
+    margin: 10px 0 10px 2%;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #122620;
+}
+.breadcrumb a:hover{
+    text-decoration: underline;
+    color:#b68d40;
+}
+.sub-cat-title{
+    color: #122620;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.book-detail-section{
+    display: flex;
+    padding: 30px 0px 0px 10%; 
+    height: auto;
+}
+.big-image{
+    object-fit: cover;
+    padding: 20px;
+    padding-left: 40px;
+}
+.big-image img{
+    width: 400px;
+    box-shadow: 5px 10px #666;
+}
+.small-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.small-images img{
+    width: 120px;
+    box-shadow: 1px 2px #666;
+    object-fit: cover;
+}
+.price-btn-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+
+}
+.price-btn-section .price{
+    font-size: 80px;
+    font-style: italic;
+}
+.price-btn-section button{
+    background: #d6ad60;
+    color: whitesmoke;
+    font-weight: lighter;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    border: #f4ebd0;
+    padding: 15px;
+    margin-top: 30px;   
+}
+.price-btn-section button:hover{
+    background: lightgray;
+    color: #122620;
+}
+.book-info{
+    margin-left: 10%;
+    margin-bottom: 10%;
+    margin-right: 7%;
+    text-align: left;
+    border: 2px inset black;
+    background-color: bisque;
+    box-shadow: 5px 10px #666;
+}
+.book-info h1{
+    font-size: 60px;
+    margin-left: 1%;
+}
+.book-author{
+    color: #666;
+    font-style: italic;
+    font-size: 30px;
+}
+.book-description{
+    text-align: justify;
+    font-size: 20px;
+    margin: 1%;
+    font-weight: lighter;
+}
+@media only screen and (max-width:1000px){
+    .book-detail-section{
+        flex-direction: column;
+        margin-left: 0px;
+        align-items: center;
+    }
+    .big-image{
+        margin: 0px;
+        padding-left: 0px;
+    }
+    .big-image img{
+        width: 330px;
+        margin-left: 0px;
+    }
+    .small-images{
+        flex-direction: row;
+        align-items: center;
+        margin: 5px;
+    }
+    .small-images img{
+        width: 90px;
+        margin: 10px;
+    }
+    .price-btn-section{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .price-btn-section .price{
+        font-size: 60px;
+    }
+    .price-btn-section button{
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .book-info h1{
+        font-size: 30px;
+    }
+    .book-author{
+        font-size: 20px;
+    }
+   .book-description{
+        font-size: 15px;
+    }
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 0% 20% 20% 20%;
+    background-color: bisque;
+    font-size: 20px;
+    box-shadow: 5px 10px #666;
+}
+.form-area {
+    margin: 1%;
+    border-bottom: 1px solid black;
+}
+.form-area input , #contact-purpose, #note{
+    background-color: bisque;
+    outline: none;
+    border: none;
+
+}
+#note{
+    max-width: 100%;
+    
+}  
+.form-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 2%;
+}
+.form-buttons .reset, .form-buttons .submit{
+    background-color: #d6ad60;
+    color: #122620;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+fieldset{
+    outline: none;
+    border: none;
+}
+fieldset  legend{
+    margin-top: 1%;
+}
+@media only screen and (max-width:768px){
+    .form-area{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact{
+        font-size: 18px;
+    }
+}
+
+.privacy-container{
+    margin: 3%;
+    border: 2px solid black;
+    padding: 1%;
+}

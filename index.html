@@ -1,0 +1,252 @@
+<!-- RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023B
+    Assessment: Assignment 1
+    Author: Phan Nguyen Viet Nhan
+    ID: s3978145
+    Acknowledgement: This project is made and publish by Phan Nguyen Viet Nhan from RMIT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--This import icons for later usage-->
+    <script src="https://kit.fontawesome.com/d3a524326f.js" crossorigin="anonymous"></script>
+    <!--Imported font family from google-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+    </style>
+    <title>📚 Luxury Bookstore 💎</title>
+</head>
+<body>
+    <!--Navigation bar section-->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i> 
+        </label>
+        <img class="img-logo" src="3238793-removebg-preview.png" alt="luxury logo">
+        <label class="logo"><a href="index.html">Luxury Bookstore</a></label>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>    
+            <li><a href="sub-cat-fic.html">Fiction</a></li>
+            <li><a href="sub-cat-nfic.html">Non-fiction</a></li>
+            <li><a href="sub-cat-cb.html">Children's Books</a></li>
+            <li><a href="contact-page.html">Contact us</a></li>
+            <li><a href="index.html#genre">Shop now</a></li>
+            
+        </ul>
+    </nav>
+    <!--Header section-->
+    <header>
+        <div class="header-content">
+            <h2>"Today a reader, tommorrow a leader"</h2>
+            <div class="line"></div>
+            <h1>SHOP WITH US,OUR FUTURE LEADER</h1>
+            <a href="index.html#genre" class="ctn">SHOP NOW</a>
+        </div>
+    </header>
+    <!--Genre section-->
+    <h2 class="genre-title" id="genre">
+        GENRE
+    </h2>
+    <section class="genre">
+        <div class="genre-item" style="background-image: url(https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-12.png?itok=Ev6LGiP_);">
+            <a href="sub-cat-nfic.html#science" class="genre-item-inner"> 
+                <div>SCIENCE</div>
+            </a>
+        </div>
+        <div class="genre-item" style="background-image: url(https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-1.png?itok=JPijQ3xG);">
+            <a href="sub-cat-fic.html#romance" class="genre-item-inner"> 
+                <div>ROMANCE</div>
+            </a>
+        </div>
+        <div class="genre-item" style="background-image: url(https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-9.png?itok=bxM3cfU-);">
+            <a href="sub-cat-fic.html#horror" class="genre-item-inner"> 
+                <div>HORROR</div>
+            </a>
+        </div>
+        <div class="genre-item" style="background-image: url(https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-6.png?itok=m62-KFwQ);">
+            <a href="sub-cat-cb.html#young-adults" class="genre-item-inner"> 
+               <div>YOUNG ADULTS</div>
+            </a>
+        </div>
+        <div class="genre-item" style="background-image: url(https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-8.png?itok=BjsPtIN2);">
+            <a href="sub-cat-nfic.html#history" class="genre-item-inner"> 
+                <div>HISTORY</div>
+            </a>
+        </div>
+        <div class="genre-item" style="background-image: url(https://manybooks.net/sites/default/files/styles/465x295sc/public/2017-12/genre-5.png?itok=DLhAjsN2);">
+            <a href="sub-cat-cb.html#picture-books" class="genre-item-inner"> 
+                <div>PICTURE BOOKS</div>
+            </a>
+        </div>
+    </section>
+    <!--Category 1 section-->
+        <h2 class="genre-title" id="fic">
+            FICTION
+        </h2>
+    <section class="book-category">
+        <div class="book-item">
+            <a href="book-detail-f4.html">
+                <div style="background-image: url(https://images-us.bookshop.org/ingram/9780735212534.jpg?height=250&v=v2);" class="book-item-image">
+            
+                </div>
+            </a>
+            <p class="book-item-title">The Hunger</p>
+            <p class="book-item-author">Alma Katsu</p>
+            <p class="book-price">from $15.81</p>
+            <a href="book-detail-f4.html" class="book-button">View Item</a>
+        </div>
+        <div class="book-item">
+            <a href="book-detail-f2.html">
+                <div style="background-image: url(https://images-us.bookshop.org/ingram/9780062959928.jpg?height=250&v=v2);" class="book-item-image">
+            
+                </div>
+            </a>
+            <p class="book-item-title">You Had Me at Hola</p>
+            <p class="book-item-author">Alexis Daria</p>
+            <p class="book-price">from $14.87</p>
+            <a href="book-detail-f2.html" class="book-button">View Item</a>
+        </div>
+        <div class="book-item">
+            <a href="book-detail-f6.html">
+                <div style="background-image: url(https://images-us.bookshop.org/ingram/9781250767028.jpg?height=250&v=v2);" class="book-item-image">
+            
+                </div>
+            </a>
+            <p class="book-item-title">Ring Shout</p>
+            <p class="book-item-author">P. Djèlí Clark</p>
+            <p class="book-price">from $18.59</p>
+            <a href="book-detail-f6.html" class="book-button">View Item</a>
+        </div>
+    </section>
+    <div class="view-more-space">
+        <h3>
+            <a href="sub-cat-fic.html" class="view-more-book">View more<i class='fas fa-angle-double-right' style='font-size:12px'></i></a>
+        </h3>
+    </div>
+    <!--Category 2 section-->
+    <h2 class="genre-title" id="nfic">
+        NON-FICTION
+    </h2>
+    <section class="book-category">
+        <div class="book-item">
+            <a href="book-detail-nf4.html">
+                <div style="background-image: url(https://images-us.bookshop.org/ingram/9780804168922.jpg?height=250&v=v2);" class="book-item-image">
+            
+                </div>
+            </a>
+            <p class="book-item-title">	Time Travel: A History</p>
+            <p class="book-item-author">James Gleick</p>
+            <p class="book-price">from $15.81</p>
+            <a href="book-detail-nf4.html" class="book-button">View Item</a>
+        </div>
+        <div class="book-item">
+            <a href="book-detail-nf1.html">
+                <div style="background-image: url(https://images-us.bookshop.org/ingram/9780375708473.jpg?height=250&v=v2-dc7a0d17a7a5f3af43d98c3ddf59ff19);" class="book-item-image">
+            
+                </div>
+            </a>
+            <p class="book-item-title">Horizon</p>
+            <p class="book-item-author">Barry Lopez</p>
+            <p class="book-price">from $16.74</p>
+            <a href="book-detail-nf1.html" class="book-button">View Item</a>
+        </div>
+        <div class="book-item">
+            <a href="book-detail-nf6.html">
+                <div style="background-image: url(https://images-us.bookshop.org/ingram/9780393356250.jpg?height=250&v=v2);" class="book-item-image">
+            
+                </div>
+            </a>
+            <p class="book-item-title">The Odyssey</p>
+            <p class="book-item-author">Homer</p>
+            <p class="book-price">from $17.62</p>
+            <a href="book-detail-nf6.html" class="book-button">View Item</a>
+        </div>
+    </section>
+    <div class="view-more-space">
+        <h3>
+            <a href="sub-cat-nfic.html" class="view-more-book">View more<i class='fas fa-angle-double-right' style='font-size:12px'></i></a>
+        </h3>
+    </div>
+        <!--Category 3 section-->
+        <h2 class="genre-title" id="cb">
+            Children's books
+        </h2>
+        <section class="book-category">
+        <div class="book-item">
+            <a href="about-us.html">
+                <div style="background-image: url(https://images-us.bookshop.org/ingram/9780525648116.jpg?height=250&v=v2-97f9d523e9d031b0fc10052da65292f0);" class="book-item-image">
+            
+                </div>
+            </a>
+            <p class="book-item-title">Unbound</p>
+            <p class="book-item-author">Joyce Scott</p>
+            <p class="book-price">from $17.66</p>
+            <a href="about-us.html" class="book-button">View Item</a>
+        </div>
+        <div class="book-item">
+            <a href="about-us.html">
+                <div style="background-image: url(https://images-us.bookshop.org/ingram/9781953344960.jpg?height=250&v=v2);" class="book-item-image">
+            
+                </div>
+            </a>
+            <p class="book-item-title">Soft to Touch Words</p>
+            <p class="book-item-author">Little Genius Books</p>
+            <p class="book-price">from $9.29</p>
+            <a href="about-us.html" class="book-button">View Item</a>
+        </div>
+        <div class="book-item">
+            <a href="about-us.html">
+                <div style="background-image: url(https://images-us.bookshop.org/ingram/9781590204597.jpg?height=250&v=v2-3a73a063e28d61eaf2f44c43dc3d0962);"  class="book-item-image">
+            
+                </div>
+            </a>
+            <p class="book-item-title">True Grit</p>
+            <p class="book-item-author">Charles Portis</p>
+            <p class="book-price">from $15.81</p>
+            <a href="about-us.html" class="book-button">View Item</a>
+        </div>
+    </section>
+    <div class="view-more-space">
+        <h3>
+            <a href="sub-cat-cb.html" class="view-more-book">View more<i class='fas fa-angle-double-right' style='font-size:12px'></i></a>
+        </h3>
+    </div>
+    <!--Video section-->
+    <h2 class="video-title"> Today's inspirational videos:</h2>
+        <div class="video-container">
+            <div class="video">
+                <iframe class="video1" alt="power and important of reading video" src="https://www.youtube.com/embed/rW2r5uStgG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe class="video2" alt="why reading matter video" src="https://www.youtube.com/embed/muuWRKYi09s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    <!--Footer section--> 
+    <footer> 
+        <div class="footer-container">    
+            <div class="social-icons">
+                <a href="https://www.facebook.com/pumpthespida/" target="_blank"><i class='fab fa-facebook'></i></a>
+                <a href="https://www.instagram.com/vietnhan._/" target="_blank"><i class='fab fa-instagram'></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class='fab fa-twitter'></i></a>
+                <a href="mailto:s3978145@rmit.edu.vn"><i class='fab fa-google-plus'></i></a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="priv-term.html">Privacy Policy</a></li>
+                    <li><a href="priv-term.html">Terms</a></li>
+                    <li><a href="about-us.html">Copyright</a></li>
+                    <li><a href="contact-page.html">Contact Us</a></li>
+                </ul>
+            </div>      
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023; Design by Viet Nhan</p>
+        </div>
+    </footer>
+    </body> 
+    </html> 

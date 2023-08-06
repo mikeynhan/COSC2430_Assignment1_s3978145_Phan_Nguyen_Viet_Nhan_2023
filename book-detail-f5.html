@@ -1,0 +1,100 @@
+<!-- RMIT University Vietnam
+    Course: COSC2430 Web Programming
+    Semester: 2023B
+    Assessment: Assignment 1
+    Author: Phan Nguyen Viet Nhan
+    ID: s3978145
+    Acknowledgement: This project is made and publish by Phan Nguyen Viet Nhan from RMIT -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!--This import icons for later usage-->
+        <script src="https://kit.fontawesome.com/d3a524326f.js" crossorigin="anonymous"></script>
+        <!--Imported font family from google-->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+        </style>
+        <title>📚 Luxury Bookstore 💎</title>
+    </head>
+    <body>
+        <!--Navigation bar section-->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i> 
+            </label>
+            <img class="img-logo" src="3238793-removebg-preview.png" alt="luxury logo">
+            <label class="logo"><a href="index.html">Luxury Bookstore</a></label>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>    
+                <li><a href="sub-cat-fic.html">Fiction</a></li>
+                <li><a href="sub-cat-nfic.html">Non-fiction</a></li>
+                <li><a href="sub-cat-cb.html">Children's Books</a></li>
+                <li><a href="contact-page.html">Contact us</a></li>
+                <li><a href="index.html#genre">Shop now</a></li>
+                
+            </ul>
+        </nav>
+        <!--Breadcrumb section-->
+        <div class="breadcrumb">
+            <p>
+                <a href="index.html">Home</a>
+                >
+                <a href="sub-cat-fic.html">Fiction</a>
+                >
+                <a href="book-detail-f5.html">Hangsaman</a>
+            </p>
+        </div>
+        <!--Book detail section-->
+        <section class="book-detail-section">
+            <div class="big-image">
+                <img src="https://images-us.bookshop.org/ingram/9780143107040.jpg?height=500&v=v2" alt="Hangsaman">
+            </div>
+            <div class="small-images">
+                <img src="https://books.google.com.vn/books/publisher/content?id=ydhgDwAAQBAJ&pg=PT3&img=1&zoom=3&hl=en&sig=ACfU3U2rrddbZ0gtti4ENEtvATzF2BVqFg&w=200" alt="Hangsaman">
+                <img src="https://books.google.com.vn/books/publisher/content?id=ydhgDwAAQBAJ&pg=PT5&img=1&zoom=3&hl=en&sig=ACfU3U31AF_ycEKbnjAJdtmTybMXuuSlmg&w=1280" alt="Hangsaman">
+                <img src="https://books.google.com.vn/books/publisher/content?id=ydhgDwAAQBAJ&pg=PT6&img=1&zoom=3&hl=en&sig=ACfU3U2QIyf2d54Di6UH02dxg8o9i5evuA&w=1280" alt="Hangsaman">
+            </div>
+            <div class="price-btn-section">
+                <p class="price">$14.88</p>
+                <button>Add to cart &nbsp;<i class='fas fa-shopping-cart'></i></button>
+            </div>
+        </section>
+        <!--Book Information section-->
+        <section class="book-info">
+            <h1>Hangsaman <span class="book-author">by Shirley Jackson</span></h1>
+            <h3 class="book-description">
+                Shirley Jackson's chilling second novel, based on her own experiences and an actual mysterious disappearance
+                Seventeen-year-old Natalie Waite longs to escape home for college. Her father is a domineering and egotistical writer who keeps a tight rein on Natalie and her long-suffering mother. When Natalie finally does get away, however, college life doesn't bring the happiness she expected. Little by little, Natalie is no longer certain of anything--even where reality ends and her dark imaginings begin. Chilling and suspenseful, Hangsaman is loosely based on the real-life disappearance of a Bennington College sophomore in 1946.
+                For more than seventy years, Penguin has been the leading publisher of classic literature in the English-speaking world. With more than 1,700 titles, Penguin Classics represents a global bookshelf of the best works throughout history and across genres and disciplines. Readers trust the series to provide authoritative texts enhanced by introductions and notes by distinguished scholars and contemporary authors, as well as up-to-date translations by award-winning translators.
+            </h3>
+        </section>
+
+    <!--Footer section--> 
+    <footer> 
+        <div class="footer-container">    
+            <div class="social-icons">
+                <a href="https://www.facebook.com/pumpthespida/" target="_blank"><i class='fab fa-facebook'></i></a>
+                <a href="https://www.instagram.com/vietnhan._/" target="_blank"><i class='fab fa-instagram'></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class='fab fa-twitter'></i></a>
+                <a href="mailto:s3978145@rmit.edu.vn"><i class='fab fa-google-plus'></i></a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="priv-term.html">Privacy Policy</a></li>
+                    <li><a href="priv-term.html">Terms</a></li>
+                    <li><a href="about-us.html">Copyright</a></li>
+                    <li><a href="contact-page.html">Contact Us</a></li>
+                </ul>
+            </div>      
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2023; Design by Viet Nhan</p>
+        </div>
+    </footer>
+    </body> 
+    </html> 
