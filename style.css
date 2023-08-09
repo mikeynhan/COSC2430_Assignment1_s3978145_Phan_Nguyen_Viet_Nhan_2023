@@ -263,6 +263,7 @@ header div a{
 @media only screen and (max-width:768px){
     .book-category{
         max-width: 100%;
+        margin: 0 8%;
     }
 }
 .book-item{
